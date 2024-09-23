@@ -222,7 +222,7 @@ button input a {
   width: calc((100% - 72px) / 4);
 }
 
-.vissually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -671,15 +671,16 @@ cursor: pointer;
 .modal-button:focus { 
   border: none;
   background-color: #404bbf;
+  
 }
 
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover, 
-.modal-close-icon:focus {
-  fill: #ffffff;
+.modal_button:hover > .modal-close-icon, 
+.modal_button:focus > .modal-close-icon {
+  fill: #ffffff
 }
 
 .is-hidden {
@@ -730,7 +731,7 @@ cursor: pointer;
   border: 1px solid rgba(46, 47, 66, 0.4); 
 
   background-color: transparent;
-  outline: transparent; 
+  
 
   border-radius: 4px;
   padding-left: 38px;
