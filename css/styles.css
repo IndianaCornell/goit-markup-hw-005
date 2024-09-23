@@ -554,13 +554,18 @@ color: rgba(255, 255, 255, 1);
 .subscribe_email {
   width: 264px;
   height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #ffffff;;
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
   color: #ffffff;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe_email:hover,
@@ -570,7 +575,8 @@ color: rgba(255, 255, 255, 1);
 
 .subscribe_button {
   display: flex;
-
+  justify-content: center; 
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -586,7 +592,7 @@ color: rgba(255, 255, 255, 1);
   border: none;
   box-shadow: 0px 4px 4px 0px #00000026;
 
-
+cursor: pointer;
 
   color: var(--main-title-and-background-color);
   background-color: var(--logo-and-button-color);
@@ -628,17 +634,23 @@ color: rgba(255, 255, 255, 1);
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
   background-color: rgba(252, 252, 252, 1);
+
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
   0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_button {
+  position: absolute;
   display: flex;
+  padding: 0;
+  cursor: pointer; 
+
   margin-left: auto;
   margin-bottom: 24px;
   justify-content: center;
@@ -650,13 +662,16 @@ color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e7e9fc;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal_button:hover,
 .modal-button:focus { 
-  fill: rgba(255, 255, 255, 1);
-  background: rgba(64, 75, 191, 1);
+  fill: #FFFFFF;
+  border: none;
+  background-color: #404bbf;
 }
 
 .is-hidden {
@@ -666,12 +681,13 @@ color: rgba(255, 255, 255, 1);
 }
 
 .modal-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--second-heading-color);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   color: rgba(46, 47, 66, 1);
 }
@@ -685,7 +701,7 @@ color: rgba(255, 255, 255, 1);
   margin-bottom: 16px;
 }
 
-.modal-label {
+.modal_label {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -694,6 +710,8 @@ color: rgba(255, 255, 255, 1);
 
   letter-spacing: 0.04em;
   color: #8E8F99;
+
+  margin-bottom: 4px;
 }
 
  
@@ -701,19 +719,22 @@ color: rgba(255, 255, 255, 1);
 .modal-input {
   width: 360px;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+
+  background-color: transparent;
+  outline: transparent; 
 
   border-radius: 4px;
   padding-left: 38px;
 
   outline: none;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus, 
 .modal-input:hover {
-  border: 1px solid  #4D5AE5;
+  border-color: #4D5AE5;
   fill: #4D5AE5;
 }
 
@@ -726,7 +747,7 @@ color: rgba(255, 255, 255, 1);
 
 .input-icon {
   position: absolute;
-  left: 12px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -740,15 +761,21 @@ color: rgba(255, 255, 255, 1);
 
 .modal-text {
   display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   width: 100%;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+
   border-radius: 4px;
   resize: none;
   padding: 8px 16px;
   outline: none;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text::placeholder {
@@ -763,38 +790,42 @@ color: rgba(255, 255, 255, 1);
 
 .modal-text:focus,
 .modal-text:hover {
-  border: 1px solid #4D5AE5;
+  border-color: #4D5AE5;
 }
 
 .modal-policy {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .policy-text {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #757575;
+  color: #8e8f99;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.policy-text span {
+
+.policy-text .modal_label_span {
+
+  display: inline-flex;
   width: 16px;
-  height: 15px;
+  height: 16px; 
   border-radius: 2px;
-  fill: none;
-  border: 1px solid #757575;
+  
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
   margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-policy:checked + .policy-text span {
-  background-color: #4D5AE5;
+  background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
 }
@@ -809,6 +840,11 @@ color: rgba(255, 255, 255, 1);
   margin: 0 auto;
   border: none;
 
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
 
   min-width: 169px;
   height: 56px;
