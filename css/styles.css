@@ -628,6 +628,14 @@ cursor: pointer;
   transform: translate(-50%, -50%) scale(0);
 }
 
+.backdrop.is-open {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
 .modal {
   position: absolute;
   top: 50%;
@@ -683,11 +691,7 @@ cursor: pointer;
   fill: #ffffff
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 
 .modal-title {
   font-weight: 500;
