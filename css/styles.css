@@ -778,7 +778,7 @@ cursor: pointer;
   width: 100%;
   height: 120px;
 
-  outline: transparent;
+  
 
   border-radius: 4px;
   resize: none;
@@ -834,7 +834,7 @@ cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-policy:checked + .policy-text span {
+.modal-policy:checked + .policy-text .modal_label_span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
