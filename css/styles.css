@@ -823,8 +823,7 @@ cursor: pointer;
 }
 
 
-.policy-text .modal_label_span {
-
+.modal_label_span {
   display: inline-flex;
   width: 16px;
   height: 16px; 
