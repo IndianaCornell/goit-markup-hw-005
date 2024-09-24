@@ -897,7 +897,7 @@ button input a {
 }
 
 .modal_label_span {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -934,7 +934,7 @@ button input a {
   min-width: 169px;
   height: 56px;
 
-  
+
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
