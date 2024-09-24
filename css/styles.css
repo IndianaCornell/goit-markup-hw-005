@@ -885,7 +885,6 @@ button input a {
 }
 
 .policy_text {
-  display: flex;
   align-items: center;
   justify-content: center;
 
