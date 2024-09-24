@@ -752,16 +752,16 @@ button input a {
   background-color: #404bbf;
 }
 
-.modal-close-icon {
+.modal_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_button:hover > .modal-close-icon,
-.modal_button:focus > .modal-close-icon {
+.modal_button:hover > .modal_close_icon,
+.modal_button:focus > .modal_close_icon {
   fill: #ffffff;
 }
 
-.modal-title {
+.modal_title {
   margin-bottom: 16px;
 
 
@@ -773,12 +773,12 @@ button input a {
   color: rgba(46, 47, 66, 1);
 }
 
-.modal-field {
+.modal_field {
   margin-bottom: 8px;
   outline: transparent;
 }
 
-.modal-field:nth-child(4n) {
+.modal_field:nth-child(4n) {
   margin-bottom: 16px;
 }
 
@@ -797,7 +797,7 @@ button input a {
   color: #8e8f99;
 }
 
-.modal-input {
+.modal_input{
   padding-left: 38px;
 
 
@@ -816,18 +816,18 @@ button input a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-input:hover {
+.modal_input:focus,
+.modal_input:hover {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
-.input-wrap {
+.input_wrap {
   position: relative;
   margin-top: 4px;
 }
 
-.input-icon {
+.input_icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -837,12 +837,12 @@ button input a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
+.modal_input:hover + .input_icon,
+.modal_input:focus + .input_icon {
   fill: #4d5ae5;
 }
 
-.modal-text {
+.modal_text {
   display: block;
 
   padding: 8px 16px;
@@ -866,7 +866,7 @@ button input a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text::placeholder {
+.modal_text::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -875,16 +875,16 @@ button input a {
   color: #2e2f4266;
 }
 
-.modal-text:focus,
-.modal-text:hover {
+.modal_text:focus,
+.modal_text:hover {
   border-color: #4d5ae5;
 }
 
-.modal-policy {
+.modal_policy {
   margin-bottom: 24px;
 }
 
-.policy-text {
+.policy_text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -918,17 +918,17 @@ button input a {
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-policy:checked + .policy-text .modal_label_span {
+.modal_policy_input:checked + .policy_text .modal_label_span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.policy-link {
+.policy_link {
   color: #4d5ae5;
 }
 
-.upload-button {
+.upload_button {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
@@ -950,7 +950,7 @@ button input a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.upload-button:hover,
-.upload-button:focus {
+.upload_button:hover,
+.upload_button:focus {
   background-color: var(--focus-color);
 }
